@@ -1,7 +1,8 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ActivityPage.aspx.cs" Inherits="Professionalism.ActivityPage" %>
+﻿<%@ Page Title="ActivityPage" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ActivityPage.aspx.cs" Inherits="Professionalism.ActivityPage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your application description page.</h3>
-    <p>Use this area to provide additional information.</p>
+    <h1>Quiz to Present</h1>
+    <asp:DataList ID="dblQuiz" runat="server"></asp:DataList>
+    <asp:Button ID="btnSubmit" runat="server" Text="Button" CssClass="btn btn-default" />
+
 </asp:Content>
