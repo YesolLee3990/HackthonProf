@@ -1,0 +1,33 @@
+DROP TABLE IF EXISTS DBO.student;
+DROP TABLE IF EXISTS DBO.teacher;
+DROP TABLE IF EXISTS DBO.class;
+DROP TABLE IF EXISTS DBO.attendance;
+
+CREATE TABLE teacher(
+	teacherId INT PRIMARY KEY NOT NULL,
+	teacherName varchar(50) NOT NULL,
+	password varchar(50)NOT NULL);
+	
+	CREATE TABLE class(
+	classId INT PRIMARY KEY NOT NULL,
+	courseName varchar(50),
+        teacherId INT,
+CONSTRAINT fk_teacherId   FOREIGN KEY (teacherId) REFERENCES teacher(teacherId));
+
+CREATE TABLE student(
+	studentId INT PRIMARY KEY NOT NULL,
+	studentNname varchar(50),
+	password varchar(50),
+	classId INT,
+CONSTRAINT fk_classId FOREIGN KEY (classId) REFERENCES class(classId));
+
+CREATE TABLE attendance(
+id INT PRIMARY KEY NOT NULL,
+	time TIME,
+        studentId INT,
+        classId INT,
+        status varchar(50),
+CONSTRAINT fk_classId_attendance  FOREIGN KEY (classId ) REFERENCES class(classId ),
+CONSTRAINT fk_studentId_attendance  FOREIGN KEY (studentId) REFERENCES student(studentId));
+
+       
