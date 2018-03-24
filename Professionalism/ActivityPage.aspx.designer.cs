@@ -10,6 +10,7 @@
 namespace Professionalism {
     
     
-    public partial class ActivityPage {
+    public partial class ActivityPage
+    {
     }
 }
