@@ -32,11 +32,11 @@
             </tr>
         </table>--%>
         <div class="form-group">
-            <asp:Label ID="lblId" runat="server" Text="Student ID"></asp:Label>
+            <asp:Label ID="lblId" runat="server" Text="User ID&nbsp;&nbsp;&nbsp;&nbsp;"></asp:Label>
             <asp:TextBox ID="txtId" class="form-control" runat="server" Width="50%"></asp:TextBox><br />
             <asp:Label ID="lblPw" runat="server" Text="Password&nbsp;"></asp:Label>
-            <asp:TextBox ID="txtPw" class="form-control" runat="server" Width="50%"></asp:TextBox>
-            <asp:Button ID="btnLogin" runat="server" Text="Button" OnClick="btnLogin_Click"/>
+            <asp:TextBox type="password" ID="txtPw" class="form-control" runat="server" Width="50%"></asp:TextBox><br />
+            <asp:Button ID="btnLogin" cssClass="btn" runat="server" Text="Submit" OnClick="btnLogin_Click"/>
         </div>
 
     </div>

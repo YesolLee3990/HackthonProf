@@ -26,7 +26,7 @@
 <div class="form-group">
                     <asp:Label ID="lblToken" runat="server"  Text="Token:"></asp:Label>
                     <asp:TextBox ID="txtToken" class="form-control" runat="server" width="50%" ></asp:TextBox>
-    <asp:Button ID="Button1" runat="server" Text="Button" onclick="Button1_Click"/>
+    <asp:Button ID="Button1" cssClass="btn" runat="server" Text="Submit" onclick="Button1_Click"/>
     </div>
 
     </div>

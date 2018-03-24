@@ -55,7 +55,7 @@
                         <li><a runat="server" href="~/EnterToken">Enter Token</a></li>
                         <li><a runat="server" href="~/ActivityPage">Activities</a></li>
                         <li><a runat="server" href="~/ActivityDetails">Activity Details</a></li>
-                        <li><a runat="server" href="~/Report">Report</a></li>
+                        <li><a runat="server" href="~/ReportForm">Report</a></li>
                     </ul>
                 </div>
             </div>

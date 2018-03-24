@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Professionalism
 {
-    public partial class EnterToken : Page
+    public partial class ReportForm : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,7 +16,7 @@ namespace Professionalism
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ActivityPage.aspx");
+            Response.Redirect("Report.aspx");
         }
     }
 }

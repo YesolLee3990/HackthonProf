@@ -59,5 +59,5 @@
             </asp:TableCell>
         </asp:TableRow>
     </asp:Table>
-    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+    <asp:Button ID="btnSubmit" runat="server" cssClass="btn" Text="Submit" OnClick="btnSubmit_Click" />
 </asp:Content>

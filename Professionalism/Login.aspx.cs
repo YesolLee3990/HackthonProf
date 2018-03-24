@@ -18,7 +18,12 @@ namespace Professionalism
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            Response.Redirect("EnterToken.aspx");
+            if(txtId.Text == "1000")
+            {
+                Response.Redirect("EnterToken.aspx");
+            }
+            else if( txtId.Text =="2000")
+            Response.Redirect("ActivityDetails.aspx");
 
             //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ProfDatabase"].ConnectionString);
             //conn.Open();

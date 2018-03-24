@@ -146,6 +146,8 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="logo1.png" />
     <Content Include="Report.aspx" />
+    <Content Include="Report2.aspx" />
+    <Content Include="ReportForm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -222,6 +224,20 @@
     </Compile>
     <Compile Include="Report.aspx.designer.cs">
       <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report2.aspx.cs">
+      <DependentUpon>Report2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report2.aspx.designer.cs">
+      <DependentUpon>Report2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.aspx.cs">
+      <DependentUpon>ReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportForm.aspx.designer.cs">
+      <DependentUpon>ReportForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

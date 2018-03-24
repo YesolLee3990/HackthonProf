@@ -20,13 +20,12 @@ namespace Professionalism
         {
 
             //Present record time
-            DateTime date = DateTime.Now.AddMinutes(Convert.ToInt32(txtEnd.Text));
-            Response.Redirect("ActivityPage.aspx");
+            //DateTime date = DateTime.Now.AddMinutes(Convert.ToInt32(txtEnd.Text));
+            Response.Redirect("Report.aspx");
 
-            Session["Question"] = txtQuestion.Text;
+           // Session["Question"] = txtQuestion.Text;
 
-
-            Response.Write("<script>alert('Welcome to Class.')</script>");
+            
 
 
         }
